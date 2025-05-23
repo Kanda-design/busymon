@@ -1,0 +1,77 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding-top: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+article p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+ul li h2 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li h2 a:hover {
+    color: #0056b3;
+}
+
+ul li em {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+/* Ensure crispy forms look decent with bootstrap */
+.form-group {
+    margin-bottom: 1rem;
+}
