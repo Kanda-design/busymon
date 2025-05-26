@@ -1,21 +1,9 @@
-from django.shortcuts import render, redirect
-from .forms import CustomUserCreationForm, PostForm
-from django.contrib.auth import login
+from django.shortcuts import render
+from .forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views import generic
 from .models import Post
 from django.urls import reverse_lazy
-
-def register(request):
-    if request.method == 'POST':
-        form = CustomUserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)
-            return redirect('/')  # Redirect to home page after registration
-    else:
-        form = CustomUserCreationForm()
-    return render(request, 'registration/register.html', {'form': form})
 
 class PostListView(generic.ListView):
     model = Post

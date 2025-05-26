@@ -1,16 +1,40 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     padding-top: 20px;
-    background-color: #f8f9fa;
+    background-color: #f0f2f5; /* Updated background color */
     color: #333;
 }
 
 .container {
-    background-color: #fff;
+    /* background-color: #fff; */ /* Removed container background */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    /* mb-3 class handles margin-bottom */
+}
+
+/* Ensure card headings maintain link color and remove underline */
+.card h2 a {
+    text-decoration: none;
+    color: #007bff; /* Match general h2 color */
+}
+
+.card h2 a:hover {
+    color: #0056b3; /* Match general h2 hover color */
+}
+
+.card em { /* Style for author/date text if needed */
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
 
 .navbar {
     margin-bottom: 20px;
@@ -44,6 +68,8 @@ article p {
     line-height: 1.6;
 }
 
+/* Removed old ul/li styles as posts are now in cards */
+/*
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -70,6 +96,7 @@ ul li em {
     font-size: 0.9em;
     color: #6c757d;
 }
+*/
 
 /* Ensure crispy forms look decent with bootstrap */
 .form-group {

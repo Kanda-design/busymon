@@ -6,14 +6,15 @@
     <p><a href="{% url 'post_create' %}" class="btn btn-primary">Create New Post</a></p>
   {% endif %}
   {% if posts %}
-    <ul>
-      {% for post in posts %}
-        <li>
+    {% for post in posts %}
+      <div class="card mb-3">
+        <div class="card-body">
           <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
           <p><em>By {{ post.author }} on {{ post.created_at|date:"F d, Y" }}</em></p>
-        </li>
-      {% endfor %}
-    </ul>
+          {# Add post content/summary here if available #}
+        </div>
+      </div>
+    {% endfor %}
   {% else %}
     <p>No posts have been published yet.</p>
   {% endif %}
